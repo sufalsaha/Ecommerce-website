@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce Website</title>
+    <!-- font-awesome starts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome end -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header-area">
+      <div class="container">
+        <nav class="header">
+          <div class="header__logo">
+            <img src="./image/logo/logo.svg" alt="" />
+          </div>
+          <div class="header__menuitm">
+            <ul>
+              <li><a href="#">Home</a></li>
+
+              <li class="Product-list">
+                Products
+                <ul class="Products">
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Single Product</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="header__icons">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <img src="./image/akar-icons_search.svg" alt="" />
+            <img src="./image/akar-icons_heart.svg" alt="" />
+            <img src="./image/ant-design_shopping-cart.svg" alt="" />
+          </div>
+          <div class="mobeil-icon">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <span>
+              <span class="menu-open" onclick="togglemenu()"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+              <span class="menu-cansel" onclick="togglemenu()"
+                ><i class="fa-regular fa-x"></i
+              ></span>
+            </span>
+          </div>
+        </nav>
+        <div class="modile-area">
+          <div class="mobile-navber">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Single Product</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let menuopen = document.querySelector(".menu-open");
+      let menucloge = document.querySelector(".menu-cansel");
+      let menulist = document.querySelector(".modile-area");
+      menulist.style.top = "-700px";
+      menuopen.style.display = "block";
+      menucloge.style.display = "none";
+
+      function togglemenu() {
+        if (menulist.style.top == "-700px") {
+          menulist.style.top = "80px";
+          menuopen.style.display = "none";
+          menucloge.style.display = "block";
+        } else {
+          menulist.style.top = "-700px";
+          menuopen.style.display = "block";
+          menucloge.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
