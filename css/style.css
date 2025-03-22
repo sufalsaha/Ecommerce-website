@@ -11,6 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container {
@@ -20,6 +23,7 @@
 .header {
   width: 100%;
   padding: 30px 50px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,11 +46,14 @@
 }
 .Product-list {
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   transition: all 0.4s;
 }
 
+.Product-list .Product-list1 {
+  cursor: pointer;
+}
 .Product-list .Products {
   flex-direction: column;
   justify-content: left;
@@ -54,7 +61,7 @@
   gap: 30px;
   padding: 30px;
   border-radius: 4px;
-  /* left: -9999px; */
+  cursor: pointer;
   top: 20px;
   opacity: 0;
   left: -20px;
@@ -62,6 +69,7 @@
   background-color: tomato;
   width: 200px;
   transition: all 0.6s;
+  /* z-index: 1; */
 }
 .Product-list:hover .Products {
   opacity: 1;
@@ -146,6 +154,14 @@
     width: 20px;
     transition: all 0.4s;
   }
+  .header__logo {
+    width: 100px;
+    height: 30px;
+  }
+  .header__logo img {
+    width: 100px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -163,8 +179,442 @@
 }
 /* header design end */
 
-/* header design starts */
-/* header design end */
+/* hero design starts */
+
+.hero-area {
+  background: url(../image/Mask-hero.png) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 716px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+}
+.hero {
+  margin-top: 200px;
+  width: 100%;
+  padding: 0px 50px;
+  height: 716px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-item {
+  background: #fff3e3;
+  padding: 42px;
+  border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  right: 60px;
+}
+
+.hero-content {
+  width: 561px;
+}
+.hero-content span {
+  font-size: 16px;
+  font: medium;
+  color: #333333;
+  letter-spacing: 5px;
+}
+.hero-content h3 {
+  font-size: 52px;
+  line-height: 65px;
+  font: bold;
+  color: #b88e2f;
+  margin-top: 4px;
+}
+.hero-content p {
+  width: 546px;
+  font-size: 18px;
+  line-height: 24px;
+  font: medium;
+  color: #333333;
+  margin-top: 17px;
+}
+.btn button {
+  padding: 25px 72px;
+  background: #b88e2f;
+  border: none;
+  color: #fff;
+  margin-top: 46px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-area {
+    width: 100%;
+    height: 516px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    margin-top: 100px;
+    padding: 0px 20px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+  }
+  .hero-content {
+    width: 280px;
+  }
+  .hero-item {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    top: 50px;
+  }
+
+  .hero-content h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font: bold;
+  }
+  .hero-content p {
+    width: 286px;
+  }
+}
+/* hero design end */
+
+
+/* Range design starts */
+.Range-area {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.Range {
+  width: 100%;
+  padding: 30px 110px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Range-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.Range-title h3{
+  font-size: 32px;
+  font: bold;
+  color: #333333;
+  text-align: center;
+}
+.Range-title p{
+  font-size: 20px;
+  font: normal;
+  color: #666666;
+  text-align: center;
+}
+
+.Range-items{
+  display: grid;
+   grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Range-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.Range-img img{
+  width: 100% ;
+  object-fit: cover;
+}
+.Range-item p{
+  font-size: 24px;
+  font: medium;
+  color: #333333;
+}
+@media screen and (max-width: 992px) {
+  .Range {
+  
+    padding: 30px 50px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .Range {
+  
+    padding: 30px 25px;
+  }
+  .Range-items{
+    display: grid;
+     grid-template-columns: auto;
+     gap: 40px;
+  }
+  
+}
+
+/* Range design end */
+
+
+/* products design starts */
+
+.products-area {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+.products {
+  width: 100%;
+  padding: 30px 102px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.products-item{
+background: #F4F5F7;
+position: relative;
+}
+
+.products-addsection{
+  background-color: #3A3A3A;
+  opacity: 0.6;
+  height: 431px;
+  width: 285px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+
+
+
+
+.products-item .products-img{
+height: 301px;
+}
+.products-description{
+  width: 285px;
+  padding: 16px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.products-description h4{
+  font-size: 24px;
+  font: medium;
+  color: #3A3A3A;
+}
+.products-description p{
+  font-size: 16px;
+  font: medium;
+  color: #898989;
+}
+.products-price{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.products-price span{
+  font-size: 20px;
+  font: bold;
+  color: #3A3A3A;
+}
+
+.products-price del{
+  font-size: 16px;
+  font: normal;
+  color: #B0B0B0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* products design end */
+
+
+/* footer design starts */
+.footer-area {
+  margin-top: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* align-items: center; */
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  
+}
+.footer {
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  
+  /* align-items: center; */
+}
+.footer-logo {
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 50px;
+  /* align-items: center; */
+}
+.footer-logo img {
+  width: 100px;
+  height: 30px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font: normal;
+  color: #9f9f9f;
+}
+
+.footer-menu1 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.footer-menu1 ul span {
+  font-size: 16px;
+  font: medium;
+  color: #9f9f9f;
+}
+.footer-menu1 ul li a {
+  font-size: 16px;
+  font: medium;
+  color: #000;
+  text-decoration: none;
+}
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.footer-newsletter span {
+  font-size: 16px;
+  font: medium;
+  color: #9f9f9f;
+}
+
+.footer-newsletter form input {
+  font-size: 16px;
+  font: medium;
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-right: 5px;
+}
+.footer-newsletter form button {
+  font-size: 16px;
+  font: medium;
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.copyright-line {
+  width: 100%;
+  height: 3px;
+  background-color: #9f9f9f;
+  /* margin: 0 30px; */
+}
+
+.copyright-title {
+  margin: 35px 30px;
+  font-size: 16px;
+  font: normal;
+  color: #000;
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .footer-menu1 ul {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-menu1 ul {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-newsletter {
+    align-items: center;
+    gap: 30px;
+  }
+  .footer-newsletter form {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* footer design end */
 
 /* header design starts */
 /* header design end */
