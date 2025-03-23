@@ -180,6 +180,49 @@
 }
 /* header design end */
 
+/* warranty design starts */
+.warranty-area {
+  background-color: #faf3ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.warranty {
+  width: 100%;
+  padding: 100px 60px;
+  background-color: #faf3ea;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+}
+
+.warranty-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.warranty-title h4 {
+  font-size: 25px;
+  font: bold;
+  line-height: 150%;
+  color: #242424;
+}
+.warranty-title {
+  font-size: 20px;
+  font: medium;
+  line-height: 150%;
+  color: #898989;
+}
+
+@media screen and (max-width: 1240px) {
+}
+/* warranty design starts */
+
 /* footer design starts */
 .footer-area {
   margin-top: 5px;

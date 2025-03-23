@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart page</title>
+
+    <!-- font-awesome starts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome end -->
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header class="header-area">
+      <div class="container">
+        <nav class="header">
+          <div class="header__logo">
+            <img src="./image/logo/logo.svg" alt="" />
+          </div>
+          <div class="header__menuitm">
+            <ul>
+              <li><a href="#">Home</a></li>
+
+              <li class="Product-list">
+                <span class="Product-list1">Products</span>
+                <ul class="Products">
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Single Product</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="header__icons">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <img src="./image/akar-icons_search.svg" alt="" />
+            <img src="./image/akar-icons_heart.svg" alt="" />
+            <img src="./image/ant-design_shopping-cart.svg" alt="" />
+          </div>
+          <div class="mobeil-icon">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <span>
+              <span class="menu-open" onclick="togglemenu()"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+              <span class="menu-cansel" onclick="togglemenu()"
+                ><i class="fa-regular fa-x"></i
+              ></span>
+            </span>
+          </div>
+        </nav>
+        <div class="modile-area">
+          <div class="mobile-navber">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Single Product</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- hero starts -->
+    <div class="hero-top"></div>
+    <section class="hero-area">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-item">
+            <div class="hero-content">
+              <img src="./image/logo/Meubel House_Logos-05.svg" alt="" />
+              <h3>Cart</h3>
+              <p>
+                Home
+                <img src="./image/icon/dashicons_arrow-down-alt2.svg" alt="" />
+                <span>Cart</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- cart starts -->
+
+    <section class="cart-area">
+      <div class="container">
+        <div class="cart">
+          <div class="cart-items">
+            <div class="cart-item1">
+              <p>Product</p>
+              <p>Price</p>
+              <div class="">
+                <p>Quantity</p>
+                <p>Subtotal</p>
+              </div>
+            </div>
+            <div class="cart-item2">
+              <img
+                class="cart-Product"
+                src="./image/Asgaard sofa 5.png"
+                alt=""
+              />
+              <div>
+                <p class="Product-name">Asgaard sofa</p>
+                <p class="Product-name">Rs. 250,000.00</p>
+                <p class="Product-numner">1</p>
+                <p>Rs. 250,000.00</p>
+              </div>
+              <img src="./image/icon/ant-design_delete-filled.svg" alt="" />
+            </div>
+          </div>
+          <div class="cart-Totals">
+            <h4>Cart Totals</h4>
+            <p>Subtotal <span>Rs. 250,000.00</span></p>
+            <p>Total <span class="price">Rs. 250,000.00</span></p>
+            <button>Check Out</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart end -->
+
+    <!-- warranty starts -->
+    <section class="warranty-area">
+      <div class="container">
+        <div class="warranty">
+          <div class="warranty-item">
+            <img src="./image/icon/trophy 1.svg" alt="" />
+            <div class="warranty-title">
+              <h4>High Quality</h4>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/guarantee.svg" alt="" />
+            <div class="warranty-title">
+              <h4>Warranty Protection</h4>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/shipping.svg" alt="" />
+            <div class="warranty-title">
+              <h4>Free Shipping</h4>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/customer-support.svg" alt="" />
+            <div class="warranty-title">
+              <h4>24 / 7 Support</h4>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- warranty end -->
+
+    <!-- footer starts -->
+
+    <section class="footer-area">
+      <div class="container">
+        <div>
+          <div class="footer">
+            <div class="footer-logo">
+              <img src="./image/logo/logo.svg" alt="" />
+              <div class="footer-title">
+                <p>400 University Drive Suite 200 Coral Gables,</p>
+                <p>FL 33134 USA</p>
+              </div>
+            </div>
+            <div class="footer-menu1">
+              <ul>
+                <span>Links</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-menu1">
+              <ul>
+                <span>Help</span>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-newsletter">
+              <span>Newsletter</span>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email Address" />
+                <button>SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <div class="copyright-line"></div>
+            <div class="copyright-title">2023 furino. All rights reverved</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+
+    <script>
+      let menuopen = document.querySelector(".menu-open");
+      let menucloge = document.querySelector(".menu-cansel");
+      let menulist = document.querySelector(".modile-area");
+      menulist.style.top = "-700px";
+      menuopen.style.display = "block";
+      menucloge.style.display = "none";
+
+      function togglemenu() {
+        if (menulist.style.top == "-700px") {
+          menulist.style.top = "80px";
+          menuopen.style.display = "none";
+          menucloge.style.display = "block";
+        } else {
+          menulist.style.top = "-700px";
+          menuopen.style.display = "block";
+          menucloge.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shop page</title>
+
+    <!-- font-awesome starts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome end -->
     <link rel="stylesheet" href="./css/shop.css" />
     <link rel="stylesheet" href="./css/header-footer.css" />
   </head>
@@ -77,7 +87,11 @@
           <div class="hero-item">
             <div class="hero-content">
               <h3>Shop</h3>
-              <p>Home > <span>Shop</span></p>
+              <p>
+                Home
+                <img src="./image/icon/dashicons_arrow-down-alt2.svg" alt="" />
+                <span>Shop</span>
+              </p>
             </div>
           </div>
         </div>
@@ -708,6 +722,43 @@
 
     <!-- Products end -->
 
+    <!-- warranty starts -->
+    <section class="warranty-area">
+      <div class="container">
+        <div class="warranty">
+          <div class="warranty-item">
+            <img src="./image/icon/trophy 1.svg" alt="" />
+            <div class="warranty-title">
+              <h4>High Quality</h4>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/guarantee.svg" alt="" />
+            <div class="warranty-title">
+              <h4>Warranty Protection</h4>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/shipping.svg" alt="" />
+            <div class="warranty-title">
+              <h4>Free Shipping</h4>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/customer-support.svg" alt="" />
+            <div class="warranty-title">
+              <h4>24 / 7 Support</h4>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- warranty end -->
+
     <!-- footer starts -->
 
     <section class="footer-area">
@@ -756,5 +807,26 @@
       </div>
     </section>
     <!-- footer end -->
+
+    <script>
+      let menuopen = document.querySelector(".menu-open");
+      let menucloge = document.querySelector(".menu-cansel");
+      let menulist = document.querySelector(".modile-area");
+      menulist.style.top = "-700px";
+      menuopen.style.display = "block";
+      menucloge.style.display = "none";
+
+      function togglemenu() {
+        if (menulist.style.top == "-700px") {
+          menulist.style.top = "80px";
+          menuopen.style.display = "none";
+          menucloge.style.display = "block";
+        } else {
+          menulist.style.top = "-700px";
+          menuopen.style.display = "block";
+          menucloge.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
