@@ -572,6 +572,234 @@
 
 /* products design end */
 
+/* inspiration design starts */
+
+.inspiration-area {
+  background-color: #fcf8f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.inspiration {
+  width: 100%;
+  padding: 30px 102px;
+  background-color: #fcf8f3;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.inspiration-items {
+  background-image: url(../image/Rectangle.png);
+  max-width: 404px;
+  height: 582px;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  padding: 20px 25px;
+  position: relative;
+}
+
+.inspiration-title h3 {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+.inspiration-title p {
+  font-size: 16px;
+  line-height: 150%;
+  font: medium;
+  color: #616161;
+  margin-top: 7px;
+}
+.inspiration-title button {
+  font-size: 16px;
+  line-height: 150%;
+  font: medium;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  background-color: #b88e2f;
+  margin-top: 25px;
+}
+.inspiration-item {
+  display: flex;
+  justify-content: center;
+  /* padding: 0 25px; */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.inspiration-item button {
+  border: none;
+  background-color: #b88e2f;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 0;
+  left: 218px;
+  cursor: pointer;
+}
+.inspiration-item1 {
+  background: #fff;
+  width: 217px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+}
+.inspiration-item1 p {
+  font-size: 16px;
+  line-height: 150%;
+  font: medium;
+  color: #616161;
+}
+.inspiration-item1 h4 {
+  font-size: 28px;
+  line-height: 120%;
+  font: medium;
+  color: #3a3a3a;
+}
+
+.inspiration-carousel {
+  position: relative;
+}
+
+.carousel-next img {
+  width: 24px;
+  height: 24px;
+}
+.carousel-next {
+  position: absolute;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 210px;
+  right: 0;
+  z-index: 1;
+}
+
+.inspiration-carouseltogol {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.togole1 {
+  width: 11px;
+  height: 11px;
+  background-color: #b88e2f;
+  border-radius: 50%;
+}
+
+.togole2 {
+  width: 27px;
+  height: 27px;
+  border: 2px solid #b88e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.togole3 {
+  width: 11px;
+  height: 11px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .inspiration {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+/* inspiration design end */
+
+/* Furniture design starts */
+.furniture-area {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.furniture {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.furniture-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.furniture-title p {
+  font-size: 20px;
+  line-height: 150%;
+  font: medium;
+  color: #616161;
+}
+.furniture-title h3 {
+  font-size: 40px;
+  line-height: 120%;
+  font: bold;
+  color: #3a3a3a;
+}
+
+.furniture-gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+.gallery {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .furniture {
+    padding: 30px 50px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .furniture-gallery img {
+    display: none;
+  }
+}
+
+/* Furniture design end */
+
 /* footer design starts */
 .footer-area {
   margin-top: 5px;
@@ -591,16 +819,12 @@
   padding: 30px 50px;
   display: flex;
   justify-content: space-between;
-
-  /* align-items: center; */
 }
 .footer-logo {
   width: 285px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 50px;
-  /* align-items: center; */
 }
 .footer-logo img {
   width: 100px;
