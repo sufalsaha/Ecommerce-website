@@ -3,18 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eCommerce Website</title>
-    <!-- font-awesome starts -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- font-awesome end -->
-
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>shop page</title>
+    <link rel="stylesheet" href="./css/shop.css" />
     <link rel="stylesheet" href="./css/header-footer.css" />
   </head>
   <body>
@@ -80,24 +70,14 @@
     <!-- header end -->
 
     <!-- hero starts -->
-
+    <div class="hero-top"></div>
     <section class="hero-area">
       <div class="container">
         <div class="hero">
           <div class="hero-item">
             <div class="hero-content">
-              <span>New Arrival</span>
-              <h3>
-                Discover Our <br />
-                New Collection
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis.
-              </p>
-              <div class="btn">
-                <button>BUY Now</button>
-              </div>
+              <h3>Shop</h3>
+              <p>Home > <span>Shop</span></p>
             </div>
           </div>
         </div>
@@ -105,49 +85,43 @@
     </section>
     <!-- hero end -->
 
-    <!-- Range starts -->
-
-    <section class="Range-area">
+    <!-- Filter starts -->
+    <section class="filter-area">
       <div class="container">
-        <div class="Range">
-          <div class="Range-title">
-            <h3>Browse The Range</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="filter">
+          <div class="filter-item">
+            <div class="filter-content">
+              <img
+                src="./image/icon/system-uicons_filtering.svg"
+                alt="filter"
+              />
+              <span>Filter</span>
+            </div>
+            <img src="./image/icon/ci_grid-big-round.svg" alt="ci_grid" />
+            <img src="./image/icon/bi_view-list.svg" alt="ci_grid" />
+            <div class="item1"></div>
+            <p>Showing 1–16 of 32 results</p>
           </div>
-          <div class="Range-items">
-            <div class="Range-item">
-              <div class="Range-img">
-                <img src="./image/Range-Group1.png" alt="" />
-              </div>
-              <p>Dining</p>
+          <div class="filter-item2">
+            <div class="filter-show">
+              <span>show</span>
+              <input type="text" placeholder="16" />
             </div>
-            <div class="Range-item">
-              <div class="Range-img">
-                <img src="./image/Range-Group2.png" alt="" />
-              </div>
-              <p>Living</p>
-            </div>
-            <div class="Range-item">
-              <div class="Range-img">
-                <img src="./image/Range-Group3.png" alt="" />
-              </div>
-              <p>Bedroom</p>
+            <div class="filter-short">
+              <span>short by</span>
+              <input type="text" placeholder="Default" />
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Range end -->
+    <!-- Filter end -->
 
     <!-- Products starts -->
 
     <section class="products-area">
       <div class="container">
         <div class="products">
-          <div class="products-header">
-            <h3>Our Products</h3>
-          </div>
           <div class="products-items">
             <div class="products-item">
               <div class="products-img">
@@ -435,103 +409,304 @@
                 </div>
               </div>
             </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products1.png" alt="" />
+              </div>
+              <div class="products-description">
+                <h4>Syltherine</h4>
+                <p>Stylish cafe chair</p>
+                <div class="products-price">
+                  <span>Rp 2.500.000</span> <del>Rp 3.500.000</del>
+                </div>
+              </div>
+              <!-- <div class="products-tagnew">New</div> -->
+              <div class="products-tagdiscaunt">-50%</div>
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products2.svg" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Leviosa</h4>
+                <p>Stylish cafe chair</p>
+                <div class="products-price">
+                  <span>Rp 2.500.000</span>
+                  <!-- <del>Rp 3.500.000</del> -->
+                </div>
+              </div>
+              <!-- <div class="products-tagnew">New</div> -->
+              <div class="products-tagdiscaunt">-30%</div>
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products3.png" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Lolito</h4>
+                <p>Luxury big sofa</p>
+                <div class="products-price">
+                  <span>Rp 7.000.000</span> <del>Rp 14.000.000</del>
+                </div>
+              </div>
+              <div class="products-tagnew">New</div>
+              <!-- <div class="products-tagdiscaunt">-50%</div> -->
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products4.png" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Respira</h4>
+                <p>Outdoor bar table and stool</p>
+                <div class="products-price">
+                  <span>Rp 500.000</span>
+                  <!-- <del>Rp 3.500.000</del> -->
+                </div>
+              </div>
+              <div class="products-tagnew">New</div>
+              <!-- <div class="products-tagdiscaunt">-50%</div> -->
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products5.png" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Grifo</h4>
+                <p>Night lamp</p>
+                <div class="products-price">
+                  <span>Rp 1.500.000</span>
+                  <!-- <del>Rp 3.500.000</del> -->
+                </div>
+              </div>
+              <!-- <div class="products-tagnew">New</div> -->
+              <!-- <div class="products-tagdiscaunt">-50%</div> -->
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products6.png" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Muggo</h4>
+                <p>Small mug</p>
+                <div class="products-price">
+                  <span>Rp 150.000</span>
+                  <!-- <del>Rp 3.500.000</del> -->
+                </div>
+              </div>
+              <div class="products-tagnew">New</div>
+              <!-- <div class="products-tagdiscaunt">-50%</div> -->
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products7.png" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Pingky</h4>
+                <p>Cute bed set</p>
+                <div class="products-price">
+                  <span>Rp 7.000.000</span>
+                  <del>Rp 14.000.000</del>
+                </div>
+              </div>
+              <!-- <div class="products-tagnew">New</div> -->
+              <div class="products-tagdiscaunt">-50%</div>
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-item">
+              <div class="products-img">
+                <img src="./image/prodect/products8.png" alt="prodect" />
+              </div>
+              <div class="products-description">
+                <h4>Potty</h4>
+                <p>Minimalist flower pot</p>
+                <div class="products-price">
+                  <span>Rp 500.000</span>
+                  <!-- <del>Rp 3.500.000</del> -->
+                </div>
+              </div>
+              <div class="products-tagnew">New</div>
+              <!-- <div class="products-tagdiscaunt">-50%</div> -->
+              <div class="products-addsection">
+                <div class="products-add">
+                  <div class="products-addbutton">
+                    <button>Add to cart</button>
+                  </div>
+                  <div class="products-addicon">
+                    <div class="icon">
+                      <img src="./image/icon/gridicons_share.svg" alt="Share" />
+                      <p>Share</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/compare.svg" alt="Compare" />
+                      <p>Compare</p>
+                    </div>
+                    <div class="icon">
+                      <img src="./image/icon/Heart.svg" alt="Like" />
+                      <p>Like</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="prodect-btn">
-            <button>Show More</button>
+          <div class="prodect-page">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="two">3</div>
+            <div class="next">Next</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Products end -->
-
-    <!-- inspiration starts -->
-
-    <section class="inspiration-area">
-      <div class="container">
-        <div class="inspiration">
-          <div class="inspiration-title">
-            <h3>50+ Beautiful rooms inspiratione</h3>
-            <p>
-              Our designer already made a lot of beautiful prototipe of rooms
-              that inspire you
-            </p>
-            <button>Explore More</button>
-          </div>
-          <div class="inspiration-items">
-            <div class="inspiration-item">
-              <div class="inspiration-item1">
-                <p>1 -- Bed Room</p>
-                <h4>Inner Peace</h4>
-              </div>
-              <button><img src="./image/icon/Vector 1.svg" alt="" /></button>
-            </div>
-          </div>
-          <div class="inspiration-carousel">
-            <img src="./image/Rectangle 25.png" alt="" />
-            <div class="carousel-next">
-              <img src="./image/icon/Right 24px.svg" alt="" />
-            </div>
-
-            <div class="inspiration-carouseltogol">
-              <div class="togole2">
-                <div class="togole1"></div>
-              </div>
-              <div class="">
-                <div class="togole3"></div>
-              </div>
-              <div class="">
-                <div class="togole3"></div>
-              </div>
-              <div class="">
-                <div class="togole3"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- inspiration end -->
-
-    <!-- Furniture starts -->
-
-    <section class="furniture-area">
-      <!-- <div class="container"> -->
-      <div class="furniture">
-        <div class="furniture-title">
-          <p>Share your setup with</p>
-          <h3>#FuniroFurniture</h3>
-        </div>
-        <div class="furniture-img">
-          <div class="furniture-gallery">
-            <img src="./image/Images.png" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="./image/Furniture/Rectangle 36.png" />
-
-            <img src="./image/Furniture/Rectangle 37.png" />
-
-            <img src="./image/Furniture/Rectangle 38.png" />
-
-            <img src="./image/Furniture/Rectangle 39.png" />
-
-            <img src="./image/Furniture/Rectangle 40.png" />
-
-            <img src="./image/Furniture/Rectangle 41.png" />
-
-            <img src="./image/Furniture/Rectangle 43.png" />
-
-            <img src="./image/Furniture/Rectangle 44.png" />
-
-            <img src="./image/Furniture/Rectangle 45.png" />
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-    </section>
-
-    <!-- Furniture end -->
 
     <!-- footer starts -->
 
@@ -581,26 +756,5 @@
       </div>
     </section>
     <!-- footer end -->
-
-    <script>
-      let menuopen = document.querySelector(".menu-open");
-      let menucloge = document.querySelector(".menu-cansel");
-      let menulist = document.querySelector(".modile-area");
-      menulist.style.top = "-700px";
-      menuopen.style.display = "block";
-      menucloge.style.display = "none";
-
-      function togglemenu() {
-        if (menulist.style.top == "-700px") {
-          menulist.style.top = "80px";
-          menuopen.style.display = "none";
-          menucloge.style.display = "block";
-        } else {
-          menulist.style.top = "-700px";
-          menuopen.style.display = "block";
-          menucloge.style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
