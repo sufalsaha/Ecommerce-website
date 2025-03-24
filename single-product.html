@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product page</title>
+
+    <!-- font-awesome starts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome end -->
+    <link rel="stylesheet" href="./css/single-product.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header class="header-area">
+      <div class="container">
+        <nav class="header">
+          <div class="header__logo">
+            <img src="./image/logo/logo.svg" alt="" />
+          </div>
+          <div class="header__menuitm">
+            <ul>
+              <li><a href="#">Home</a></li>
+
+              <li class="Product-list">
+                <span class="Product-list1">Products</span>
+                <ul class="Products">
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Single Product</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="header__icons">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <img src="./image/akar-icons_search.svg" alt="" />
+            <img src="./image/akar-icons_heart.svg" alt="" />
+            <img src="./image/ant-design_shopping-cart.svg" alt="" />
+          </div>
+          <div class="mobeil-icon">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <span>
+              <span class="menu-open" onclick="togglemenu()"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+              <span class="menu-cansel" onclick="togglemenu()"
+                ><i class="fa-regular fa-x"></i
+              ></span>
+            </span>
+          </div>
+        </nav>
+        <div class="modile-area">
+          <div class="mobile-navber">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Single Product</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- hero starts -->
+    <div class="hero-top"></div>
+    <section class="hero-area">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-item">
+            <p>
+              Home
+              <img src="./image/icon/dashicons_arrow-down-alt2.svg" alt="" />
+            </p>
+            <p>
+              Shop
+              <img src="./image/icon/dashicons_arrow-down-alt2.svg" alt="" />
+            </p>
+            <div class="item">
+              <div></div>
+              <p>Asgaard sofa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- Showcase starts -->
+
+    <section class="showcase-area">
+      <div class="container">
+        <div class="showcase">
+          <div class="showcase-item">
+            <div class="showcase-img">
+              <img src="./image/prodect/Asgaard sofa 3.png" alt="" />
+            </div>
+            <div class="showcase-imgs">
+              <img src="./image/prodect/Mask group.png" alt="" />
+              <img src="./image/prodect/Outdoor sofa set_2 1.png" alt="" />
+              <img src="./image/prodect/Stuart sofa 1.png" alt="" />
+              <img
+                src="./image/prodect/Maya sofa three seater (1) 1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="showcase-item2">
+            <div class="showcase-title">
+              <h2>Asgaard sofa</h2>
+              <p>Rs. 250,000.00</p>
+            </div>
+            <div class="showcase-review">
+              <div class="review-ster">
+                <img src="./image/icon/dashicons_star-filled.svg" alt="ster" />
+                <img src="./image/icon/dashicons_star-filled.svg" alt="ster" />
+                <img src="./image/icon/dashicons_star-filled.svg" alt="ster" />
+                <img src="./image/icon/dashicons_star-filled.svg" alt="ster" />
+                <img src="./image/icon/carbon_star-half.svg" alt="ster" />
+              </div>
+              <div class="review-iten"></div>
+              <p>5 Customer Review</p>
+            </div>
+            <div class="showcase-description">
+              <p class="description">
+                Setting the bar as one of the loudest speakers in its class, the
+                Kilburn is a compact, stout-hearted hero with a well-balanced
+                audio which boasts a clear midrange and extended highs for a
+                sound.
+              </p>
+
+              <div class="showcase-size">
+                <p class="size-title">Size</p>
+                <div class="sizeing">
+                  <p class="l">L</p>
+                  <p class="xl">XL</p>
+                  <p class="xl">XS</p>
+                </div>
+              </div>
+              <div class="showcase-color">
+                <p class="color-title">Color</p>
+                <div class="coloring">
+                  <p class="one"></p>
+                  <p class="two"></p>
+                  <p class="Three"></p>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-button">
+              <div class="showcase-btn">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+              </div>
+              <div class="showcase-btnCart">Add To Cart</div>
+              <div class="showcase-btnCart">+ Compare</div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="details">
+              <p><span>SKU</span>:&ensp;SS001</p>
+              <p><span>Category</span>:&ensp;Sofas</p>
+              <p><span>Tags</span>:&ensp;Sofa, Chair, Home, Shop</p>
+              <p>
+                <span>Share</span>:&ensp;
+                <img
+                  src="./image/icon/akar-icons_facebook-fill.svg"
+                  alt="facebook"
+                />
+                <img
+                  src="./image/icon/akar-icons_linkedin-box-fill.svg"
+                  alt="facebook"
+                />
+                <img
+                  src="./image/icon/ant-design_twitter-circle-filled.svg"
+                  alt="facebook"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- showcase end -->
+
+    <!-- footer starts -->
+
+    <section class="footer-area">
+      <div class="container">
+        <div>
+          <div class="footer">
+            <div class="footer-logo">
+              <img src="./image/logo/logo.svg" alt="" />
+              <div class="footer-title">
+                <p>400 University Drive Suite 200 Coral Gables,</p>
+                <p>FL 33134 USA</p>
+              </div>
+            </div>
+            <div class="footer-menu1">
+              <ul>
+                <span>Links</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-menu1">
+              <ul>
+                <span>Help</span>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-newsletter">
+              <span>Newsletter</span>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email Address" />
+                <button>SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <div class="copyright-line"></div>
+            <div class="copyright-title">2023 furino. All rights reverved</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+
+    <script>
+      let menuopen = document.querySelector(".menu-open");
+      let menucloge = document.querySelector(".menu-cansel");
+      let menulist = document.querySelector(".modile-area");
+      menulist.style.top = "-700px";
+      menuopen.style.display = "block";
+      menucloge.style.display = "none";
+
+      function togglemenu() {
+        if (menulist.style.top == "-700px") {
+          menulist.style.top = "80px";
+          menuopen.style.display = "none";
+          menucloge.style.display = "block";
+        } else {
+          menulist.style.top = "-700px";
+          menuopen.style.display = "block";
+          menucloge.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
