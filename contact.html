@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+
+    <!-- font-awesome starts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome end -->
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header class="header-area">
+      <div class="container">
+        <nav class="header">
+          <div class="header__logo">
+            <img src="./image/logo/logo.svg" alt="" />
+          </div>
+          <div class="header__menuitm">
+            <ul>
+              <li><a href="#">Home</a></li>
+
+              <li class="Product-list">
+                <span class="Product-list1">Products</span>
+                <ul class="Products">
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Single Product</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="header__icons">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <img src="./image/akar-icons_search.svg" alt="" />
+            <img src="./image/akar-icons_heart.svg" alt="" />
+            <img src="./image/ant-design_shopping-cart.svg" alt="" />
+          </div>
+          <div class="mobeil-icon">
+            <img src="./image/mdi_account-alert-outline.svg" alt="" />
+            <span>
+              <span class="menu-open" onclick="togglemenu()"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+              <span class="menu-cansel" onclick="togglemenu()"
+                ><i class="fa-regular fa-x"></i
+              ></span>
+            </span>
+          </div>
+        </nav>
+        <div class="modile-area">
+          <div class="mobile-navber">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Checkout</a></li>
+              <li><a href="#">Single Product</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- hero starts -->
+    <div class="hero-top"></div>
+    <section class="hero-area">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-item">
+            <div class="hero-content">
+              <img src="./image/logo/Meubel House_Logos-05.svg" alt="" />
+              <h3>Contact</h3>
+              <p>
+                Home
+                <img src="./image/icon/dashicons_arrow-down-alt2.svg" alt="" />
+                <span>Contact</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- contact starts -->
+
+    <section class="contact-area">
+      <div class="container">
+        <div class="contact">
+          <div class="contact-title">
+            <h2>Get In Touch With Us</h2>
+            <p>
+              For More Information About Our Product & Services. Please Feel
+              Free To Drop Us An Email. Our Staff Always Be There To Help You
+              Out. Do Not Hesitate!
+            </p>
+          </div>
+          <div class="contact-us">
+            <div class="address-area">
+              <div class="contact-address">
+                <img src="./image/icon/address.svg" alt="" />
+                <div>
+                  <h3>Address</h3>
+                  <p>236 5th SE Avenue, New York NY10000, United States</p>
+                </div>
+              </div>
+              <div class="contact-address">
+                <img src="./image/icon/bxs_phone.svg" alt="" />
+                <div>
+                  <h3>Phone</h3>
+                  <p>Mobile: +(84) 546-6789</p>
+                  <p>Hotline: +(84) 456-6789</p>
+                </div>
+              </div>
+              <div class="contact-address">
+                <img src="./image/icon/bi_clock-fill.svg" alt="" />
+                <div>
+                  <h3>Working Time</h3>
+                  <p>Monday-Friday: 9:00 - 22:00</p>
+                  <p>Saturday-Sunday: 9:00 - 21:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-from">
+              <div class="contact-name">
+                <label for="name">Your name</label>
+                <input
+                  class="input-field"
+                  placeholder="Enter Your Name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="email">Email address</label>
+                <input
+                  class="input-field"
+                  placeholder="Abc@def.com"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="Subject">Subject</label>
+                <input
+                  class="input-field"
+                  placeholder="This is an optional"
+                  type="text"
+                  name="Subject"
+                  id="Subject"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="Message">Message</label>
+                <textarea
+                  class="input-field"
+                  name="Message"
+                  id="Message"
+                  placeholder="Hi! i’d like to ask about"
+                ></textarea>
+              </div>
+              <div class="Submit-btn">
+                <button>Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact end -->
+
+    <!-- warranty starts -->
+    <section class="warranty-area">
+      <div class="container">
+        <div class="warranty">
+          <div class="warranty-item">
+            <img src="./image/icon/trophy 1.svg" alt="" />
+            <div class="warranty-title">
+              <h4>High Quality</h4>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/guarantee.svg" alt="" />
+            <div class="warranty-title">
+              <h4>Warranty Protection</h4>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/shipping.svg" alt="" />
+            <div class="warranty-title">
+              <h4>Free Shipping</h4>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div class="warranty-item">
+            <img src="./image/icon/customer-support.svg" alt="" />
+            <div class="warranty-title">
+              <h4>24 / 7 Support</h4>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- warranty end -->
+
+    <!-- footer starts -->
+
+    <section class="footer-area">
+      <div class="container">
+        <div>
+          <div class="footer">
+            <div class="footer-logo">
+              <img src="./image/logo/logo.svg" alt="" />
+              <div class="footer-title">
+                <p>400 University Drive Suite 200 Coral Gables,</p>
+                <p>FL 33134 USA</p>
+              </div>
+            </div>
+            <div class="footer-menu1">
+              <ul>
+                <span>Links</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-menu1">
+              <ul>
+                <span>Help</span>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-newsletter">
+              <span>Newsletter</span>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email Address" />
+                <button>SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <div class="copyright-line"></div>
+            <div class="copyright-title">2023 furino. All rights reverved</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+
+    <script>
+      let menuopen = document.querySelector(".menu-open");
+      let menucloge = document.querySelector(".menu-cansel");
+      let menulist = document.querySelector(".modile-area");
+      menulist.style.top = "-700px";
+      menuopen.style.display = "block";
+      menucloge.style.display = "none";
+
+      function togglemenu() {
+        if (menulist.style.top == "-700px") {
+          menulist.style.top = "80px";
+          menuopen.style.display = "none";
+          menucloge.style.display = "block";
+        } else {
+          menulist.style.top = "-700px";
+          menuopen.style.display = "block";
+          menucloge.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
