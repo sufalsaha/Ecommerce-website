@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 /* hero design starts */
@@ -47,14 +48,14 @@
 }
 .hero-content span {
   font-size: 16px;
-  font: medium;
+  font-weight: 500;
   color: #333333;
   letter-spacing: 5px;
 }
 .hero-content h1 {
   font-size: 52px;
   line-height: 65px;
-  font: bold;
+  font-weight: bold;
   color: #b88e2f;
   margin-top: 4px;
 }
@@ -62,7 +63,7 @@
   width: 546px;
   font-size: 18px;
   line-height: 24px;
-  font: medium;
+  font-weight: 500;
   color: #333333;
   margin-top: 17px;
 }
@@ -97,7 +98,7 @@
   .hero-content h1 {
     font-size: 32px;
     line-height: 42px;
-    font: bold;
+    font-weight: bold;
     color: #b88e2f;
     margin-top: 4px;
   }
@@ -114,7 +115,7 @@
   .hero-content h3 {
     font-size: 32px;
     line-height: 40px;
-    font: bold;
+    font-weight: bold;
   }
   .hero-content p {
     width: 286px;
@@ -148,13 +149,13 @@
 }
 .Range-title h3 {
   font-size: 32px;
-  font: bold;
+  font-weight: bold;
   color: #333333;
   text-align: center;
 }
 .Range-title p {
   font-size: 20px;
-  font: normal;
+  font-weight: normal;
   color: #666666;
   text-align: center;
 }
@@ -174,13 +175,21 @@
   align-items: center;
   gap: 25px;
 }
+.Range-img {
+  width: 100%;
+}
 .Range-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.img1 {
   width: 100%;
   object-fit: cover;
 }
 .Range-item p {
   font-size: 24px;
-  font: medium;
+  font-weight: 600;
   color: #333333;
 }
 @media screen and (max-width: 992px) {
@@ -251,7 +260,7 @@
   border-radius: 50%;
   font-size: 16px;
   line-height: 150%;
-  font: medium;
+  font-weight: 500;
   color: #fff;
   top: 20px;
   right: 20px;
@@ -268,7 +277,7 @@
   border-radius: 50%;
   font-size: 16px;
   line-height: 150%;
-  font: medium;
+  font-weight: 500;
   color: #fff;
   top: 20px;
   right: 20px;
@@ -342,12 +351,12 @@
 }
 .products-description h4 {
   font-size: 24px;
-  font: medium;
+  font-weight: 500;
   color: #3a3a3a;
 }
 .products-description p {
   font-size: 16px;
-  font: medium;
+  font-weight: 500;
   color: #898989;
 }
 .products-price {
@@ -356,13 +365,13 @@
 }
 .products-price span {
   font-size: 20px;
-  font: bold;
+  font-weight: bold;
   color: #3a3a3a;
 }
 
 .products-price del {
   font-size: 16px;
-  font: normal;
+  font-weight: normal;
   color: #b0b0b0;
 }
 /* use end */
@@ -446,14 +455,14 @@
 .inspiration-title p {
   font-size: 16px;
   line-height: 150%;
-  font: medium;
+  font-weight: 500;
   color: #616161;
   margin-top: 7px;
 }
 .inspiration-title button {
   font-size: 16px;
   line-height: 150%;
-  font: medium;
+  font-weight: 500;
   color: #fff;
   border: none;
   padding: 10px 30px;
@@ -490,13 +499,13 @@
 .inspiration-item1 p {
   font-size: 16px;
   line-height: 150%;
-  font: medium;
+  font-weight: 500;
   color: #616161;
 }
 .inspiration-item1 h4 {
   font-size: 28px;
   line-height: 120%;
-  font: medium;
+  font-weight: 500;
   color: #3a3a3a;
 }
 
@@ -592,13 +601,13 @@
 .furniture-title p {
   font-size: 20px;
   line-height: 150%;
-  font: medium;
+  font-weight: 500;
   color: #616161;
 }
 .furniture-title h3 {
   font-size: 40px;
   line-height: 120%;
-  font: bold;
+  font-weight: bold;
   color: #3a3a3a;
 }
 

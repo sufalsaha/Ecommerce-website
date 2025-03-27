@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 /* hero design starts */
@@ -30,7 +31,6 @@
 .hero {
   width: 100%;
   padding: 0px 50px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 .hero-content h3 {
   font-size: 48px;
-  font: medium;
+  font-weight: 600;
   color: #000000;
 }
 .hero-content p {
@@ -58,7 +58,7 @@
 }
 .hero-content p span {
   font-size: 16px;
-  font: normal;
+  font-weight: normal;
   color: #000000;
 }
 @media screen and (max-width: 992px) {
