@@ -94,6 +94,13 @@
   .hero-content {
     width: 280px;
   }
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 42px;
+    font: bold;
+    color: #b88e2f;
+    margin-top: 4px;
+  }
   .hero-item {
     padding: 25px;
     display: flex;
