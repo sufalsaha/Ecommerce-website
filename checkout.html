@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart page</title>
+    <title>Checkout page</title>
 
     <!-- font-awesome starts -->
     <link
@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- font-awesome end -->
-    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
     <link rel="stylesheet" href="./css/header-footer.css" />
   </head>
   <body>
@@ -89,11 +89,11 @@
           <div class="hero-item">
             <div class="hero-content">
               <img src="./image/logo/Meubel House_Logos-05.svg" alt="" />
-              <h3>Cart</h3>
+              <h3>Checkout</h3>
               <p>
                 Home
                 <img src="./image/icon/dashicons_arrow-down-alt2.svg" alt="" />
-                <span>Cart</span>
+                <span>Checkout</span>
               </p>
             </div>
           </div>
@@ -102,45 +102,192 @@
     </section>
     <!-- hero end -->
 
-    <!-- cart starts -->
+    <!-- Billing starts -->
 
-    <section class="cart-area">
+    <section class="billing-area">
       <div class="container">
-        <div class="cart">
-          <div class="cart-items">
-            <div class="cart-item1">
-              <p>Product</p>
-              <p>Price</p>
-              <div class="">
-                <p>Quantity</p>
-                <p>Subtotal</p>
-              </div>
+        <div class="billing">
+          <div class="billing-details">
+            <div class="billing-title">
+              <h2>Billing details</h2>
             </div>
-            <div class="cart-item2">
-              <img
-                class="cart-Product"
-                src="./image/Asgaard sofa 5.png"
-                alt=""
-              />
-              <div>
-                <p class="Product-name">Asgaard sofa</p>
-                <p class="Product-name">Rs. 250,000.00</p>
-                <p class="Product-numner">1</p>
-                <p>Rs. 250,000.00</p>
+
+            <div class="contact-from">
+              <div class="from-name">
+                <div class="contact-name">
+                  <label for="firstName">First Name</label>
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    required
+                  />
+                </div>
+                <div class="contact-name">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    class="input-field"
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    required
+                  />
+                </div>
               </div>
-              <img src="./image/icon/ant-design_delete-filled.svg" alt="" />
+              <div class="contact-name">
+                <label for="companyName">Company Name (Optional)</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="companyName"
+                  id="companyName"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="country">Country / Region</label>
+
+                <div class="input-field">
+                  <select name="country" id="country" required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
+              </div>
+              <div class="contact-name">
+                <label for="streetAddress">Street address</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="streetAddress"
+                  id="streetAddress"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="town">Town / City</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="town"
+                  id="town"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="province">Province</label>
+
+                <div class="input-field">
+                  <select name="province" id="province" required>
+                    <option value="volvo">Western Province</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
+              </div>
+              <div class="contact-name">
+                <label for="zIPCode">ZIP code</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="zIPCode"
+                  id="zIPCode"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="phone">Phone</label>
+                <input
+                  class="input-field"
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <label for="email">Email address</label>
+                <input
+                  class="input-field"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="contact-name">
+                <!-- <label for="email">Email address</label> -->
+                <input
+                  class="input-field"
+                  placeholder="Additional information"
+                  type="text"
+                  name="additional"
+                  id="additional"
+                  required
+                />
+              </div>
             </div>
           </div>
-          <div class="cart-Totals">
-            <h4>Cart Totals</h4>
-            <p>Subtotal <span>Rs. 250,000.00</span></p>
-            <p>Total <span class="price">Rs. 250,000.00</span></p>
-            <button>Check Out</button>
+          <div class="product-detalis">
+            <div class="detalis-item item1">
+              <p>Product</p>
+              <p>Subtotal</p>
+            </div>
+            <div class="detalis-item item2">
+              <p><span>Asgaard sofa</span> X 1</p>
+              <p>Rs. 250,000.00</p>
+            </div>
+            <div class="detalis-item item3">
+              <p>Subtotal</p>
+              <p>Rs. 250,000.00</p>
+            </div>
+            <div class="detalis-item item4">
+              <span>Total</span>
+              <p>Rs. 250,000.00</p>
+            </div>
+            <hr />
+            <div class="product-item1">
+              <div class="Bank-Transfer">
+                <div class="Transfer">
+                  <div></div>
+                  <h5>Direct Bank Transfer</h5>
+                </div>
+                <p>
+                  Make your payment directly into our bank account. Please use
+                  your Order ID as the payment reference. Your order will not be
+                  shipped until the funds have cleared in our account.
+                </p>
+              </div>
+              <div class="Transfer1">
+                <div></div>
+                <h5>Direct Bank Transfer</h5>
+              </div>
+              <div class="Transfer1">
+                <div></div>
+                <h5>Direct Bank Transfer</h5>
+              </div>
+              <div class="Transfer2">
+                <p>
+                  Your personal data will be used to support your experience
+                  throughout this website, to manage access to your account, and
+                  for other purposes described in our
+                  <span>privacy policy.</span>
+                </p>
+              </div>
+              <div class="order-btn">
+                <button>Place order</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- cart end -->
+
+    <!-- Billing end -->
 
     <!-- warranty starts -->
     <section class="warranty-area">

@@ -564,20 +564,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .furniture {
-  width: 100%;
   padding: 30px 0px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 32px;
 }
 
 .furniture-title {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -596,10 +595,76 @@
   color: #3a3a3a;
 }
 
-.furniture-gallery img {
-  width: 100%;
+.contenr {
+  overflow: hidden;
+}
+.image-galare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.image-galare img {
   object-fit: cover;
 }
+.img-laft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.laft1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.laft1 img {
+  object-fit: cover;
+}
+.laft2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.laft2 img {
+  object-fit: cover;
+}
+
+.img-medel img {
+  object-fit: cover;
+}
+.img-right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.right1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.right1 img {
+  object-fit: cover;
+}
+
+.right2 {
+  display: flex;
+
+  align-items: start;
+  gap: 10px;
+}
+.right2 img {
+  object-fit: cover;
+}
+
+/* end */
 .gallery {
   display: none;
   flex-direction: column;
@@ -619,15 +684,9 @@
     flex-direction: column;
     gap: 20px;
   }
-  .furniture-gallery img {
+  .contenr {
     display: none;
   }
 }
 
 /* Furniture design end */
-
-/* header design starts */
-/* header design end */
-
-/* header design starts */
-/* header design end */
